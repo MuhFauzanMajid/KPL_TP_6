@@ -6,8 +6,13 @@ internal class Program
     {
         SayaTubeVideo video = new SayaTubeVideo("Tutorial Design By Contract - Muhammad Fauzan Majid");
         video.PrintVideoDetails();
-        video.IncreasePlayCount(10);
-        Console.WriteLine();
-        video.PrintVideoDetails();
+
+        //SayaTubeVideo videoNull = new SayaTubeVideo("");
+        //video.IncreasePlayCount(100000000);
+
+        for (int i = 0; i < 215; i++)
+        {
+            video.IncreasePlayCount(10000000);
+        }
     }
 }
